@@ -11,26 +11,26 @@ const SalonContext = createContext<SalonContextType | undefined>(undefined);
 
 export const SalonProvider = ({ children }: { children: ReactNode }) => {
   const [salonData, setSalonData] = useState<typeof INITIAL_DATA>(() => {
-    const saved = localStorage.getItem("bless-nails-data");
+    // CHAVE ÚNICA PARA A MATRIZ CENTRAL SINTRA
+    const saved = localStorage.getItem("central-sintra-data");
     
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
         
-        // MERGE INTELIGENTE:
-        // Priorizamos o que está no código (INITIAL_DATA) para novas funcionalidades,
-        // mas mantemos as edições do usuário (parsed) para o que já existia.
+        // MERGE INTELIGENTE DA MATRIX:
+        // Garante que novas funcionalidades no código (INITIAL_DATA) apareçam 
+        // mesmo que o usuário tenha dados antigos no navegador.
         return {
           ...INITIAL_DATA,
           ...parsed,
-          // Se o parsed.team for undefined (versão antiga), usamos o do código.
-          // Se o usuário limpou a equipe no painel, ele virá como [] e respeitaremos isso.
           team: parsed.team || INITIAL_DATA.team,
           socialLinks: { ...INITIAL_DATA.socialLinks, ...parsed.socialLinks },
-          galleryPhotos: parsed.galleryPhotos || INITIAL_DATA.galleryPhotos
+          galleryPhotos: parsed.galleryPhotos || INITIAL_DATA.galleryPhotos,
+          images: { ...INITIAL_DATA.images, ...parsed.images }
         };
       } catch (e) {
-        console.error("Erro ao carregar dados do LocalStorage:", e);
+        console.error("Erro ao carregar dados da Matrix:", e);
         return INITIAL_DATA;
       }
     }
@@ -40,7 +40,7 @@ export const SalonProvider = ({ children }: { children: ReactNode }) => {
 
   const updateSalonData = (newData: typeof INITIAL_DATA) => {
     setSalonData(newData);
-    localStorage.setItem("bless-nails-data", JSON.stringify(newData));
+    localStorage.setItem("central-sintra-data", JSON.stringify(newData));
   };
 
   return (

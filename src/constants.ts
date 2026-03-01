@@ -4,62 +4,62 @@ export type Language = "pt" | "en" | "es";
 
 export const UI_STRINGS = {
   pt: {
-    about: "Conceito", services: "Serviços", gallery: "Galeria", gallerySubtitle: "Estilo neo-clássico e lazer.",
-    reviews: "Críticas", location: "Localização", bookNow: "Agendar Agora", bookTreatment: "Reservar Cadeira",
-    viewServices: "Ver Preçário", ourEssence: "A nossa arte", luxuryMeetsRelaxation: "Corte, Snooker e Convivio",
-    ourServices: "Serviços Lisbon'Style", servicesSubtitle: "Excelência profissional com um toque de lazer no coração de Alvalade.",
-    duration: "Duração", price: "Preço", visitUs: "Visite-nos", openingHours: "Horário",
-    seeOnGoogleMaps: "Como Chegar", followUs: "Siga-nos", quickLinks: "Links", privacy: "Privacidade",
+    about: "História", services: "Edições", gallery: "Arquivo", gallerySubtitle: "Crónicas em imagem.",
+    reviews: "Testemunhos", location: "Redação", bookNow: "Reservar Cadeira", bookTreatment: "Marcar Corte",
+    viewServices: "Ver Preçário", ourEssence: "Desde sempre", luxuryMeetsRelaxation: "Estilo Tradicional & Navalha",
+    ourServices: "Serviços Centrais", servicesSubtitle: "Rituais de barbearia clássica no coração de Pêro Pinheiro, Sintra.",
+    duration: "Tempo", price: "Valor", visitUs: "Visite a Redação", openingHours: "Horário",
+    seeOnGoogleMaps: "Localizar", followUs: "Siga-nos", quickLinks: "Atalhos", privacy: "Privacidade",
     terms: "Termos", allRightsReserved: "Todos os direitos reservados.",
-    tagline: "Super inovador, neo-clássico e ambiente familiar em Alvalade.",
-    footerDescription: "Lisbon'Style Barbershop: Um espaço de excelência profissional com mesa de snooker e ambiente exclusivo.",
-    closed: "Fechado", team: "A Equipa", teamSubtitle: "Profissionais 5 estrelas ao seu dispor.",
-    cookiesTitle: "Privacidade", cookiesText: "Usamos cookies para a melhor experiência.",
-    cookiesAccept: "Aceitar", cookiesReject: "Recusar", cookiesMore: "Saber mais"
+    tagline: "A sua barbearia de confiança com o espírito da velha guarda em Sintra.",
+    footerDescription: "Barbearia Central Sintra: Excelência profissional e tradição num espaço único decorado com a história do tempo.",
+    closed: "Fechado", team: "Mestres", teamSubtitle: "Os artesãos da tesoura e navalha.",
+    cookiesTitle: "Notas de Rodapé", cookiesText: "Usamos cookies para melhorar a leitura do site.",
+    cookiesAccept: "Aceitar", cookiesReject: "Ignorar", cookiesMore: "Saber mais"
   },
   en: {
-     about: "Concept", services: "Services", gallery: "Gallery", gallerySubtitle: "Neo-classic style & leisure.",
+     about: "History", services: "Services", gallery: "Archive", gallerySubtitle: "Visual chronicles.",
      reviews: "Reviews", location: "Location", bookNow: "Book Now", bookTreatment: "Book a Chair",
-     viewServices: "Prices", ourEssence: "Our Art", luxuryMeetsRelaxation: "Cuts, Snooker & Lounge",
-     ourServices: "Lisbon'Style Services", servicesSubtitle: "Professional excellence with a leisure touch in Alvalade.",
-     duration: "Duration", price: "Price", visitUs: "Visit Us", openingHours: "Hours",
-     seeOnGoogleMaps: "Directions", followUs: "Follow Us", quickLinks: "Links", privacy: "Privacy",
-     terms: "Terms", allRightsReserved: "All rights reserved.", tagline: "Innovative, neo-classic and family vibe in Alvalade.",
-     footerDescription: "Lisbon'Style Barbershop: Professional excellence with snooker table and exclusive lounge.",
-     closed: "Closed", team: "The Team", teamSubtitle: "5-star professionals at your service.",
+     viewServices: "Prices", ourEssence: "Always", luxuryMeetsRelaxation: "Traditional Style & Razor",
+     ourServices: "Central Services", servicesSubtitle: "Classic barbering rituals in the heart of Pêro Pinheiro, Sintra.",
+     duration: "Time", price: "Price", visitUs: "Visit Us", openingHours: "Hours",
+     seeOnGoogleMaps: "Locate", followUs: "Follow Us", quickLinks: "Links", privacy: "Privacy",
+     terms: "Terms", allRightsReserved: "All rights reserved.", tagline: "Your trusted old-school barbershop in Sintra.",
+     footerDescription: "Barbearia Central Sintra: Professional excellence and tradition in a unique historic space.",
+     closed: "Closed", team: "Masters", teamSubtitle: "The craftsmen of scissors and razor.",
      cookiesTitle: "Privacy", cookiesText: "We use cookies.", cookiesAccept: "Accept", cookiesReject: "Decline", cookiesMore: "More"
   },
   es: {
-     about: "Concepto", services: "Servicios", gallery: "Galería", gallerySubtitle: "Estilo neoclásico y ocio.",
+     about: "Historia", services: "Servicios", gallery: "Archivo", gallerySubtitle: "Crónicas visuales.",
      reviews: "Reseñas", location: "Ubicación", bookNow: "Reservar", bookTreatment: "Reservar Silla",
-     viewServices: "Precios", ourEssence: "Nuestro Arte", luxuryMeetsRelaxation: "Corte, Snooker y Lounge",
-     ourServices: "Servicios Lisbon'Style", servicesSubtitle: "Excelencia profesional con un toque de ocio en Alvalade.",
-     duration: "Duración", price: "Precio", visitUs: "Visítanos", openingHours: "Horario",
-     seeOnGoogleMaps: "Como llegar", followUs: "Síguenos", quickLinks: "Enlaces", privacy: "Privacidad",
-     terms: "Términos", allRightsReserved: "Todos los derechos reservados.", tagline: "Innovador, neoclásico y ambiente familiar en Alvalade.",
-     footerDescription: "Lisbon'Style Barbershop: Excelencia profesional con mesa de billar y lounge exclusivo.",
-     closed: "Cerrado", team: "El Equipo", teamSubtitle: "Profesionales 5 estrellas a su servicio.",
+     viewServices: "Precios", ourEssence: "Siempre", luxuryMeetsRelaxation: "Estilo Tradicional y Navaja",
+     ourServices: "Servicios Centrales", servicesSubtitle: "Rituales de barbería clásica en el corazón de Pêro Pinheiro, Sintra.",
+     duration: "Tiempo", price: "Precio", visitUs: "Visítanos", openingHours: "Horario",
+     seeOnGoogleMaps: "Localizar", followUs: "Síguenos", quickLinks: "Enlaces", privacy: "Privacidad",
+     terms: "Términos", allRightsReserved: "Todos los derechos reservados.", tagline: "Tu barbería de confianza con espíritu de la vieja escuela en Sintra.",
+     footerDescription: "Barbearia Central Sintra: Excelencia profesional y tradición en un espacio histórico único.",
+     closed: "Cerrado", team: "Maestros", teamSubtitle: "Los artesanos de la tijera y navaja.",
      cookiesTitle: "Privacidad", cookiesText: "Usamos cookies.", cookiesAccept: "Aceptar", cookiesReject: "Rechazar", cookiesMore: "Saber más"
   }
 };
 
 export const SALON_DATA = {
-  name: "Lisbon'Style Barbershop",
+  name: "Barbearia Central Sintra",
   tagline: {
-    pt: "Super inovador, conceito neo-clássico e ambiente familiar em Alvalade.",
-    en: "Innovative neo-classic concept and family vibe in Alvalade.",
-    es: "Concepto neoclásico innovador y ambiente familiar en Alvalade."
+    pt: "Onde a história e o estilo se encontram em Pêro Pinheiro.",
+    en: "Where history and style meet in Pêro Pinheiro.",
+    es: "Donde la historia y el estilo se encuentran en Pêro Pinheiro."
   },
   description: {
-    pt: "A Lisbon'Style Barbershop em Alvalade é um espaço inovador que funde a barbearia clássica com uma zona de lazer única, incluindo mesa de snooker e sofás. Oferecemos um serviço de excelência profissional num ambiente familiar pensado para o seu bem-estar.",
-    en: "Lisbon'Style in Alvalade is an innovative space merging classic barbering with a unique leisure area, featuring snooker and lounge. Professional excellence in a family vibe.",
-    es: "Lisbon'Style en Alvalade es un espacio innovador que fusiona la barbería clásica con una zona de ocio única, incluyendo mesa de billar y lounge."
+    pt: "Localizada na Av. da Liberdade, a Barbearia Central Sintra é mais do que um local para cortar o cabelo; é um arquivo vivo da cultura do barbeiro. Decorada com jornais antigos e memórias, oferecemos um ambiente acolhedor onde Valmir e Gabriel aplicam a arte da tesoura e navalha com precisão absoluta.",
+    en: "Located at Av. da Liberdade, Barbearia Central Sintra is a living archive of barber culture. Decorated with old newspapers and memories, we offer a welcoming vibe where Valmir and Gabriel apply their craft.",
+    es: "Ubicada en la Av. da Liberdade, la Barbearia Central Sintra es un archivo vivo de la cultura del barbero. Decorada con periódicos antiguos y memorias."
   },
-  address: "Av. do Brasil 149, 1700-067 Lisboa",
-  phoneNumber: "+351937561999",
-  googleMapsUrl: "https://www.google.com/maps/dir//Lisbon'Style+Barbershop+Alvalade,+Av.+do+Brasil+149,+1700-067+Lisboa",
-  bookingUrl: "https://wa.me/351937561999?text=Olá! Gostaria de agendar um serviço na Lisbon'Style Alvalade.",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.9687483642353!2d-9.1458!3d38.754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331000000000%3A0x0!2sLisbon'Style%20Barbershop%20Alvalade!5e0!3m2!1spt!2spt!4v1740860000000",
+  address: "Av. da Liberdade 96, 2715-005 Pêro Pinheiro",
+  phoneNumber: "+351219271007",
+  googleMapsUrl: "https://www.google.com/maps/dir//Barbearia+Central+Sintra,+Av.+da+Liberdade+96,+2715-005+Pêro+Pinheiro",
+  bookingUrl: "https://www.fresha.com/pt/a/barbearia-central-pero-pinheiro-pero-pinheiro-avenida-da-liberdade-96-vm4fhm-pero-pinheiro-portugal-xcgfypxc",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.154789!2d-9.3323!3d38.8475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ed67000000000%3A0x0!2sBarbearia%20Central%20Sintra!5e0!3m2!1spt!2spt!4v1740860000000",
   
   images: {
     heroBg: "/hero-bg.webp",
@@ -67,37 +67,38 @@ export const SALON_DATA = {
     aboutDetail: "/sobre-detalhe.webp"
   },
 
-  socialLinks: { instagram: "https://www.instagram.com/lisbonstylealvalade/", facebook: "", tiktok: "" },
+  socialLinks: { instagram: "https://www.instagram.com/barbeariacentralsintra/", facebook: "", tiktok: "" },
 
   galleryPhotos: [
     "https://i.ibb.co/JFqMZPw6/pexels-gustavo-fring-7447150.jpg",
-    "https://i.ibb.co/MxjKjv56/pexels-cottonbro-3998429.jpg", 
-    "https://i.ibb.co/HLHrv5xq/pexels-thgusstavo-2881253.jpg", 
+    "", "", "", "", "", "", "", "", ""
   ],
 
   team: [
-    { name: "Bruno", role: { pt: "Barbeiro", en: "Barber", es: "Barbero" }, image: "https://i.ibb.co/HRPzBhV/pexels-hikaique-331989.jpg" },
-    { name: "Cássio", role: { pt: "Barbeiro", en: "Barber", es: "Barbero" }, image: "" }
+    { name: "Valmir", role: { pt: "Mestre Barbeiro", en: "Master Barber", es: "Maestro Barbero" }, image: "" },
+    { name: "Gabriel", role: { pt: "Especialista Kids & Estilo", en: "Kids & Style Specialist", es: "Especialista Kids" }, image: "" }
   ],
   
   services: [
-    { name: { pt: "Corte Estilo", en: "Style Cut", es: "Corte Estilo" }, price: "15", duration: "45min", description: { pt: "Corte personalizado com lavagem e styling.", en: "Custom cut with wash and styling.", es: "Corte personalizado con lavado y peinado." } },
-    { name: { pt: "Ritual Barba", en: "Beard Ritual", es: "Ritual Barba" }, price: "12", duration: "30min", description: { pt: "Barba à navalha com toalha quente.", en: "Razor beard with hot towel.", es: "Barba a navaja con toalla caliente." } }
+    { name: { pt: "Corte Central", en: "Central Cut", es: "Corte Central" }, price: "12", duration: "45min", description: { pt: "Corte tradicional com lavagem e finalização a seco.", en: "Traditional cut with wash and styling.", es: "Corte tradicional con lavado y peinado." } },
+    { name: { pt: "Barba de Toalha", en: "Hot Towel Beard", es: "Barba de Toalla" }, price: "10", duration: "30min", description: { pt: "Barba desenhada com ritual de toalha quente e massagem.", en: "Beard trim with hot towel and massage.", es: "Barba con ritual de toalla caliente." } },
+    { name: { pt: "Corte Júnior", en: "Junior Cut", es: "Corte Junior" }, price: "10", duration: "30min", description: { pt: "Atendimento especializado para crianças com o mestre Gabriel.", en: "Specialized care for children with master Gabriel.", es: "Atención especializada para niños." } }
   ],
   
   hours: [
-    { day: { pt: "Segunda a Sábado", en: "Mon to Sat", es: "Lun a Sáb" }, time: "10:00 - 22:00" },
+    { day: { pt: "Segunda a Sexta", en: "Mon to Fri", es: "Lun a Vie" }, time: "09:00 - 19:30" },
+    { day: { pt: "Sábado", en: "Saturday", es: "Sábado" }, time: "08:30 - 18:30" },
     { day: { pt: "Domingo", en: "Sunday", es: "Domingo" }, time: "Fechado" }
   ],
   
   features: {
-    pt: ["Mesa de Snooker", "Zona Lounge", "Ambiente Familiar", "Acessível", "Neo-Clássico", "Especialistas em Barba"],
-    en: ["Pool Table", "Lounge Area", "Family Vibe", "Accessible", "Neo-Classic", "Beard Specialists"],
-    es: ["Mesa de Billar", "Zona Lounge", "Ambiente Familiar", "Accesible", "Neo-Clásico", "Expertos en Barba"]
+    pt: ["Decoração Histórica", "Corte Infantil", "Estacionamento à porta", "Ambiente Familiar", "Preço Acessível", "Especialistas em Barba"],
+    en: ["Historic Decor", "Kids Friendly", "Easy Parking", "Family Vibe", "Affordable", "Beard Specialists"],
+    es: ["Decoración Histórica", "Corte Infantil", "Parking Fácil", "Ambiente Familiar", "Precio Asequible", "Expertos en Barba"]
   },
   
   reviews: [
-    { author: "Gonçalo Silva", text: { pt: "Quem me cortou o cabelo foi o Bruno, brasileiro, cinco estrelas.", en: "Bruno cut my hair, 5 stars.", es: "Bruno me cortó el pelo, 5 estrellas." }, rating: 5 },
-    { author: "Nelson Amendoeira", text: { pt: "Super inovador, conceito neo-clássico, ambiente muito familiar.", en: "Very innovative, neo-classic concept, great family vibe.", es: "Muy innovador, concepto neoclásico, gran ambiente familiar." }, rating: 5 }
+    { author: "Bárbara Global", text: { pt: "O Gabriel tem muita experiência com crianças também e isso ajudou nosso filho.", en: "Gabriel is great with kids, helped our son a lot.", es: "Gabriel tiene mucha experiencia con niños, ayudó mucho a nuestro hijo." }, rating: 5 },
+    { author: "Leticia Rodrigues", text: { pt: "Sempre tem horário disponível, Gabriel que nos atendeu é um excelente profissional.", en: "Always has slots, Gabriel is an excellent professional.", es: "Siempre hay disponibilidad, Gabriel es un excelente profesional." }, rating: 5 }
   ]
 };
