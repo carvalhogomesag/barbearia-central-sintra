@@ -156,13 +156,13 @@ export const SALON_DATA = {
   },
 
   galleryPhotos: [
-    "https://i.ibb.co/99SZskLY/Captura-de-ecr-2026-02-28-220502.png",
-    "https://i.ibb.co/3mGvP98B/Captura-de-ecr-2026-02-28-220245.png",
-    "https://i.ibb.co/NdDp9vRJ/Captura-de-ecr-2026-02-28-220234.png",
-    "https://i.ibb.co/LzH9y7q4/Captura-de-ecr-2026-02-28-220221.png",
-    "https://i.ibb.co/xS4qmFwj/Captura-de-ecr-2026-02-28-220206.png",
-    "https://i.ibb.co/v4L29Z0C/Captura-de-ecr-2026-02-28-220148.png",
-    "https://i.ibb.co/p6sXL1dQ/Captura-de-ecr-2026-02-28-220133.png",
+    "https://i.ibb.co/HRPzBhV/pexels-hikaique-331989.jpg",
+    "https://i.ibb.co/HLHrv5xq/pexels-thgusstavo-2881253.jpg",
+    "https://i.ibb.co/9HnF3rM8/pexels-enginakyurt-3356174.jpg",
+    "https://i.ibb.co/MxjKjv56/pexels-cottonbro-3998429.jpg",
+    "https://i.ibb.co/CpDgN4MH/pexels-lumierestudiomx-897251.jpg",
+    "https://i.ibb.co/tp55bNd6/pexels-kevinbidwell-9971240.jpg",
+    "https://i.ibb.co/JFqMZPw6/pexels-gustavo-fring-7447150.jpg",
     "", "", ""
   ],
 
