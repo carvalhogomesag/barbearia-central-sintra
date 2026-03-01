@@ -4,263 +4,99 @@ export type Language = "pt" | "en" | "es";
 
 export const UI_STRINGS = {
   pt: {
-    about: "Conceito",
-    services: "Serviços",
-    gallery: "Galeria",
-    gallerySubtitle: "Estilo e precisão em cada detalhe.",
-    reviews: "Críticas",
-    location: "Localização",
-    bookNow: "Agendar Agora",
-    bookTreatment: "Reservar Cadeira",
-    viewServices: "Ver Preçário",
-    ourEssence: "A nossa tradição",
-    luxuryMeetsRelaxation: "Onde o luxo encontra o relaxamento",
-    ourServices: "Serviços MORN",
-    servicesSubtitle: "Excelência em barbearia clássica e tendências modernas no coração de Benfica.",
-    duration: "Duração",
-    price: "Preço",
-    viewFullMenu: "Ver Menu Completo",
-    realExperiences: "Experiências Reais",
-    whatClientsSay: "O que dizem os nossos clientes",
-    visitUs: "Visite-nos",
-    openingHours: "Horário de Funcionamento",
-    seeOnGoogleMaps: "Como Chegar",
-    followUs: "Siga-nos",
-    quickLinks: "Links Rápidos",
-    privacy: "Privacidade",
-    terms: "Termos",
-    allRightsReserved: "Todos os direitos reservados.",
-    tagline: "A sua barbearia de confiança no Centro Comercial Fonte Nova.",
-    footerDescription: "MORN Barbearia: Especialistas em cortes de precisão, rituais de barba tradicional e estética masculina de alta gama.",
-    scroll: "Scroll",
-    closed: "Fechado",
-    team: "Barbeiros",
-    teamSubtitle: "Especialistas dedicadas a realçar a sua melhor imagem.",
-    // RGPD Cookies
-    cookiesTitle: "Privacidade & Cookies",
-    cookiesText: "Utilizamos cookies para melhorar a sua experiência e analisar o tráfego do site. Ao continuar, aceita a nossa política.",
-    cookiesAccept: "Aceitar Todos",
-    cookiesReject: "Apenas Necessários",
-    cookiesMore: "Saber Mais"
+    about: "Conceito", services: "Serviços", gallery: "Galeria", gallerySubtitle: "Estilo neo-clássico e lazer.",
+    reviews: "Críticas", location: "Localização", bookNow: "Agendar Agora", bookTreatment: "Reservar Cadeira",
+    viewServices: "Ver Preçário", ourEssence: "A nossa arte", luxuryMeetsRelaxation: "Corte, Snooker e Convivio",
+    ourServices: "Serviços Lisbon'Style", servicesSubtitle: "Excelência profissional com um toque de lazer no coração de Alvalade.",
+    duration: "Duração", price: "Preço", visitUs: "Visite-nos", openingHours: "Horário",
+    seeOnGoogleMaps: "Como Chegar", followUs: "Siga-nos", quickLinks: "Links", privacy: "Privacidade",
+    terms: "Termos", allRightsReserved: "Todos os direitos reservados.",
+    tagline: "Super inovador, neo-clássico e ambiente familiar em Alvalade.",
+    footerDescription: "Lisbon'Style Barbershop: Um espaço de excelência profissional com mesa de snooker e ambiente exclusivo.",
+    closed: "Fechado", team: "A Equipa", teamSubtitle: "Profissionais 5 estrelas ao seu dispor.",
+    cookiesTitle: "Privacidade", cookiesText: "Usamos cookies para a melhor experiência.",
+    cookiesAccept: "Aceitar", cookiesReject: "Recusar", cookiesMore: "Saber mais"
   },
   en: {
-    about: "Concept",
-    services: "Services",
-    gallery: "Gallery",
-    gallerySubtitle: "Style and precision in every detail.",
-    reviews: "Reviews",
-    location: "Location",
-    bookNow: "Book Now",
-    bookTreatment: "Book a Chair",
-    viewServices: "View Prices",
-    ourEssence: "Our Tradition",
-    luxuryMeetsRelaxation: "Where luxury meets relaxation",
-    ourServices: "MORN Services",
-    servicesSubtitle: "Excellence in classic barbering and modern trends in the heart of Benfica.",
-    duration: "Duration",
-    price: "Price",
-    viewFullMenu: "Full Menu",
-    realExperiences: "Real Experiences",
-    whatClientsSay: "What our clients say",
-    visitUs: "Visit Us",
-    openingHours: "Opening Hours",
-    seeOnGoogleMaps: "Directions",
-    followUs: "Follow Us",
-    quickLinks: "Quick Links",
-    privacy: "Privacy",
-    terms: "Terms",
-    allRightsReserved: "All rights reserved.",
-    tagline: "Your trusted barbershop at CC Fonte Nova.",
-    footerDescription: "MORN Barbearia: Specialists in precision cuts, traditional beard rituals, and high-end male grooming.",
-    scroll: "Scroll",
-    closed: "Closed",
-    team: "Barbers",
-    teamSubtitle: "Specialists dedicated to enhancing your best look.",
-    // RGPD Cookies
-    cookiesTitle: "Privacy & Cookies",
-    cookiesText: "We use cookies to enhance your experience and analyze traffic. By clicking 'Accept', you agree to our policy.",
-    cookiesAccept: "Accept All",
-    cookiesReject: "Essentials Only",
-    cookiesMore: "Learn More"
+     about: "Concept", services: "Services", gallery: "Gallery", gallerySubtitle: "Neo-classic style & leisure.",
+     reviews: "Reviews", location: "Location", bookNow: "Book Now", bookTreatment: "Book a Chair",
+     viewServices: "Prices", ourEssence: "Our Art", luxuryMeetsRelaxation: "Cuts, Snooker & Lounge",
+     ourServices: "Lisbon'Style Services", servicesSubtitle: "Professional excellence with a leisure touch in Alvalade.",
+     duration: "Duration", price: "Price", visitUs: "Visit Us", openingHours: "Hours",
+     seeOnGoogleMaps: "Directions", followUs: "Follow Us", quickLinks: "Links", privacy: "Privacy",
+     terms: "Terms", allRightsReserved: "All rights reserved.", tagline: "Innovative, neo-classic and family vibe in Alvalade.",
+     footerDescription: "Lisbon'Style Barbershop: Professional excellence with snooker table and exclusive lounge.",
+     closed: "Closed", team: "The Team", teamSubtitle: "5-star professionals at your service.",
+     cookiesTitle: "Privacy", cookiesText: "We use cookies.", cookiesAccept: "Accept", cookiesReject: "Decline", cookiesMore: "More"
   },
   es: {
-    about: "Concepto",
-    services: "Servicios",
-    gallery: "Galería",
-    gallerySubtitle: "Estilo y precisión en cada detalle.",
-    reviews: "Reseñas",
-    location: "Ubicación",
-    bookNow: "Reservar",
-    bookTreatment: "Reservar Silla",
-    viewServices: "Ver Precios",
-    ourEssence: "Nuestra Tradición",
-    luxuryMeetsRelaxation: "Donde el lujo se encuentra con la relajación",
-    ourServices: "Servicios MORN",
-    servicesSubtitle: "Excelencia en barbería clásica y tendencias modernas en el corazón de Benfica.",
-    duration: "Duración",
-    price: "Precio",
-    viewFullMenu: "Ver Menú Completo",
-    realExperiences: "Experiencias Reales",
-    whatClientsSay: "Lo que dicen nuestros clientes",
-    visitUs: "Visítanos",
-    openingHours: "Horario de Funcionamiento",
-    seeOnGoogleMaps: "Como llegar",
-    followUs: "Síguenos",
-    quickLinks: "Enlaces Rápidos",
-    privacy: "Privacidad",
-    terms: "Términos",
-    allRightsReserved: "Todos los derechos reservados.",
-    tagline: "Tu barbería de confianza en el CC Fonte Nova.",
-    footerDescription: "MORN Barbearia: Especialistas en cortes de precisión, rituales de barba tradicional y estética masculina de alta gama.",
-    scroll: "Scroll",
-    closed: "Cerrado",
-    team: "Barberos",
-    teamSubtitle: "Especialistas dedicados a realzar tu mejor imagen.",
-    // RGPD Cookies
-    cookiesTitle: "Privacidad & Cookies",
-    cookiesText: "Utilizamos cookies para mejorar su experiencia y analizar el tráfico. Al continuar, acepta nuestra política.",
-    cookiesAccept: "Aceptar Todo",
-    cookiesReject: "Solo Necesarios",
-    cookiesMore: "Saber Más"
+     about: "Concepto", services: "Servicios", gallery: "Galería", gallerySubtitle: "Estilo neoclásico y ocio.",
+     reviews: "Reseñas", location: "Ubicación", bookNow: "Reservar", bookTreatment: "Reservar Silla",
+     viewServices: "Precios", ourEssence: "Nuestro Arte", luxuryMeetsRelaxation: "Corte, Snooker y Lounge",
+     ourServices: "Servicios Lisbon'Style", servicesSubtitle: "Excelencia profesional con un toque de ocio en Alvalade.",
+     duration: "Duración", price: "Precio", visitUs: "Visítanos", openingHours: "Horario",
+     seeOnGoogleMaps: "Como llegar", followUs: "Síguenos", quickLinks: "Enlaces", privacy: "Privacidad",
+     terms: "Términos", allRightsReserved: "Todos los derechos reservados.", tagline: "Innovador, neoclásico y ambiente familiar en Alvalade.",
+     footerDescription: "Lisbon'Style Barbershop: Excelencia profesional con mesa de billar y lounge exclusivo.",
+     closed: "Cerrado", team: "El Equipo", teamSubtitle: "Profesionales 5 estrellas a su servicio.",
+     cookiesTitle: "Privacidad", cookiesText: "Usamos cookies.", cookiesAccept: "Aceptar", cookiesReject: "Rechazar", cookiesMore: "Saber más"
   }
 };
 
 export const SALON_DATA = {
-  name: "MORN Barbearia",
+  name: "Lisbon'Style Barbershop",
   tagline: {
-    pt: "Cortes de precisão e rituais de barba no Centro Comercial Fonte Nova.",
-    en: "Precision cuts and beard rituals at CC Fonte Nova.",
-    es: "Cortes de precisión y rituales de barba en el CC Fonte Nova."
+    pt: "Super inovador, conceito neo-clássico e ambiente familiar em Alvalade.",
+    en: "Innovative neo-classic concept and family vibe in Alvalade.",
+    es: "Concepto neoclásico innovador y ambiente familiar en Alvalade."
   },
   description: {
-    pt: "A MORN Barbearia combina a arte tradicional da barbearia com o estilo urbano contemporâneo. No Centro Comercial Fonte Nova, oferecemos um espaço de convívio e cuidado masculino, onde cada detalhe — das cadeiras clássicas vermelhas ao acabamento à navalha — é pensado para quem valoriza a excelência e o bem-estar.",
-    en: "MORN Barbearia blends traditional barbering art with contemporary urban style. Located at CC Fonte Nova, we provide a male grooming space where every detail — from classic red chairs to razor finishes — is designed for those who value excellence.",
-    es: "MORN Barbearia combina el arte tradicional de la barbería con el estilo urbano contemporáneo. En el CC Fonte Nova, ofrecemos un espaço de cuidado masculino donde cada detalle está pensado para quien valora la excelencia."
+    pt: "A Lisbon'Style Barbershop em Alvalade é um espaço inovador que funde a barbearia clássica com uma zona de lazer única, incluindo mesa de snooker e sofás. Oferecemos um serviço de excelência profissional num ambiente familiar pensado para o seu bem-estar.",
+    en: "Lisbon'Style in Alvalade is an innovative space merging classic barbering with a unique leisure area, featuring snooker and lounge. Professional excellence in a family vibe.",
+    es: "Lisbon'Style en Alvalade es un espacio innovador que fusiona la barbería clásica con una zona de ocio única, incluyendo mesa de billar y lounge."
   },
-  address: "CC Fonte Nova, Estrada de Benfica 503, Loja 57, 1500-083 Lisboa",
-  phoneNumber: "+351939559805",
-  googleMapsUrl: "https://www.google.com/maps/dir//MORN+Barbearia+-+Centro+Comercial+Fonte+Nova+-+Benfica,+Centro+Comercial+Fonte+Nova,+Estr.+de+Benfica+503+Loja+57,+1500-083+Lisboa",
-  bookingUrl: "https://wa.me/351939559805?text=Olá! Gostaria de agendar um serviço na MORN Barbearia.",  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.543412586716!2d-9.1973656!3d38.7470659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19335f606e1233%3A0x6a2c98e16663f707!2sMORN%20Barbearia%20-%20Centro%20Comercial%20Fonte%20Nova%20-%20Benfica!5e0!3m2!1spt!2spt!4v1740860000000",
+  address: "Av. do Brasil 149, 1700-067 Lisboa",
+  phoneNumber: "+351937561999",
+  googleMapsUrl: "https://www.google.com/maps/dir//Lisbon'Style+Barbershop+Alvalade,+Av.+do+Brasil+149,+1700-067+Lisboa",
+  bookingUrl: "https://wa.me/351937561999?text=Olá! Gostaria de agendar um serviço na Lisbon'Style Alvalade.",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.9687483642353!2d-9.1458!3d38.754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19331000000000%3A0x0!2sLisbon'Style%20Barbershop%20Alvalade!5e0!3m2!1spt!2spt!4v1740860000000",
   
-  // NOVA PROPRIEDADE: IMAGENS PRINCIPAIS (Editáveis via Matrix)
   images: {
     heroBg: "/hero-bg.webp",
     aboutPrincipal: "/sobre-principal.webp",
     aboutDetail: "/sobre-detalhe.webp"
   },
 
-  socialLinks: {
-    instagram: "https://www.instagram.com/mornbarbearia/",
-    facebook: "",
-    tiktok: ""
-  },
+  socialLinks: { instagram: "https://www.instagram.com/lisbonstylealvalade/", facebook: "", tiktok: "" },
 
   galleryPhotos: [
-    "https://i.ibb.co/HRPzBhV/pexels-hikaique-331989.jpg",
-    "https://i.ibb.co/HLHrv5xq/pexels-thgusstavo-2881253.jpg",
-    "https://i.ibb.co/9HnF3rM8/pexels-enginakyurt-3356174.jpg",
-    "https://i.ibb.co/MxjKjv56/pexels-cottonbro-3998429.jpg",
-    "https://i.ibb.co/CpDgN4MH/pexels-lumierestudiomx-897251.jpg",
-    "https://i.ibb.co/tp55bNd6/pexels-kevinbidwell-9971240.jpg",
     "https://i.ibb.co/JFqMZPw6/pexels-gustavo-fring-7447150.jpg",
-    "", "", ""
+    "", "", "", "", "", "", "", "", ""
   ],
 
   team: [
-    {
-      name: "Gonçalo Silva",
-      role: { pt: "Master Barber", en: "Master Barber", es: "Maestro Barbero" },
-      image: "https://i.ibb.co/k6kXCcRQ/Captura-de-ecr-2026-03-01-182310.png"
-    },
+    { name: "Bruno", role: { pt: "Barbeiro", en: "Barber", es: "Barbero" }, image: "" },
+    { name: "Cássio", role: { pt: "Barbeiro", en: "Barber", es: "Barbero" }, image: "" }
   ],
   
   services: [
-    {
-      name: { pt: "Corte MORN", en: "MORN Haircut", es: "Corte MORN" },
-      price: "15",
-      duration: "45min",
-      description: {
-        pt: "Corte de cabelo personalizado com lavagem e acabamento final.",
-        en: "Custom haircut including wash and styling.",
-        es: "Corte de pelo personalizado con lavado y acabado."
-      }
-    },
-    {
-      name: { pt: "Barba Tradicional", en: "Traditional Beard", es: "Barba Tradicional" },
-      price: "12",
-      duration: "30min",
-      description: {
-        pt: "Ritual de barba com toalha quente, massagem e produtos premium.",
-        en: "Beard ritual with hot towel, massage, and premium products.",
-        es: "Ritual de barba con toalla caliente, masaje y productos premium."
-      }
-    },
-    {
-      name: { pt: "Corte & Barba Combo", en: "Hair & Beard Combo", es: "Combo Corte y Barba" },
-      price: "25",
-      duration: "1h 15min",
-      description: {
-        pt: "O serviço completo MORN para uma renovação total do seu estilo.",
-        en: "The full MORN service for a complete style overhaul.",
-        es: "El servicio completo MORN para una renovación total de estilo."
-      }
-    },
-    {
-      name: { pt: "Corte Jovem (até 12 anos)", en: "Junior Cut", es: "Corte Junior" },
-      price: "12",
-      duration: "30min",
-      description: {
-        pt: "Estilo e cuidado para os mais novos com profissionais experientes.",
-        en: "Style and care for the little ones with experienced barbers.",
-        es: "Estilo y cuidado para los más jóvenes con barberos expertos."
-      }
-    }
+    { name: { pt: "Corte Estilo", en: "Style Cut", es: "Corte Estilo" }, price: "15", duration: "45min", description: { pt: "Corte personalizado com lavagem e styling.", en: "Custom cut with wash and styling.", es: "Corte personalizado con lavado y peinado." } },
+    { name: { pt: "Ritual Barba", en: "Beard Ritual", es: "Ritual Barba" }, price: "12", duration: "30min", description: { pt: "Barba à navalha com toalha quente.", en: "Razor beard with hot towel.", es: "Barba a navaja con toalla caliente." } }
   ],
   
   hours: [
-    {
-      day: { pt: "Segunda a Sábado", en: "Monday to Saturday", es: "Lunes a Sábado" },
-      time: "10:00 - 23:00"
-    },
-    {
-      day: { pt: "Domingo", en: "Sunday", es: "Domingo" },
-      time: "10:00 - 23:00"
-    }
+    { day: { pt: "Segunda a Sábado", en: "Mon to Sat", es: "Lun a Sáb" }, time: "10:00 - 22:00" },
+    { day: { pt: "Domingo", en: "Sunday", es: "Domingo" }, time: "Fechado" }
   ],
   
   features: {
-    pt: ["Ambiente Moderno", "Especialistas em Barba", "Estacionamento Fácil", "Acessível", "Wifi Gratuito", "LGBTQ+ Friendly"],
-    en: ["Modern Vibe", "Beard Specialists", "Easy Parking", "Accessible", "Free Wifi", "LGBTQ+ Friendly"],
-    es: ["Ambiente Moderno", "Expertos en Barba", "Parking Fácil", "Accesible", "Wifi Gratis", "LGBTQ+ Friendly"]
+    pt: ["Mesa de Snooker", "Zona Lounge", "Ambiente Familiar", "Acessível", "Neo-Clássico", "Especialistas em Barba"],
+    en: ["Pool Table", "Lounge Area", "Family Vibe", "Accessible", "Neo-Classic", "Beard Specialists"],
+    es: ["Mesa de Billar", "Zona Lounge", "Ambiente Familiar", "Accesible", "Neo-Clásico", "Expertos en Barba"]
   },
   
   reviews: [
-    {
-      author: "Bruno Morgado",
-      text: {
-        pt: "Excelentes profissionais com um cuidado de excelência para com os clientes. Relação preço qualidade muito bom!",
-        en: "Excellent professionals with top-tier customer care. Great value for money!",
-        es: "Excelentes profesionales con un cuidado de excelencia. ¡Relación calidad-precio muy buena!"
-      },
-      rating: 5
-    },
-    {
-      author: "Paulo Silva",
-      text: {
-        pt: "Serviço de qualidade e equipa 5 estrelas! Espaço muito bem decorado.",
-        en: "Quality service and 5-star team! Very well decorated space.",
-        es: "¡Servicio de calidad y equipo 5 estrellas! Espacio muy bien decorado."
-      },
-      rating: 5
-    },
-    {
-      author: "Gonçalo Silva",
-      text: {
-        pt: "Equipa espectacular, bons profissionais, indico a todos!",
-        en: "Spectacular team, great professionals, I recommend to everyone!",
-        es: "¡Equipo espectacular, buenos profesionales, lo recomiendo a todos!"
-      },
-      rating: 5
-    }
+    { author: "Gonçalo Silva", text: { pt: "Quem me cortou o cabelo foi o Bruno, brasileiro, cinco estrelas.", en: "Bruno cut my hair, 5 stars.", es: "Bruno me cortó el pelo, 5 estrellas." }, rating: 5 },
+    { author: "Nelson Amendoeira", text: { pt: "Super inovador, conceito neo-clássico, ambiente muito familiar.", en: "Very innovative, neo-classic concept, great family vibe.", es: "Muy innovador, concepto neoclásico, gran ambiente familiar." }, rating: 5 }
   ]
 };
