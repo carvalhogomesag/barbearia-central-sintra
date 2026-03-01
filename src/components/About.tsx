@@ -20,20 +20,25 @@ export const About = ({ lang }: { lang: Language }) => {
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative px-4 md:px-0"
         >
-          {/* Moldura Rígida e Imagem com Zoom Sutil */}
+          {/* Moldura Rígida e Imagem Dinâmica */}
           <div className="aspect-[4/5] rounded-none overflow-hidden shadow-[20px_20px_0px_0px_rgba(10,10,10,0.3)] relative border-4 border-white/10">
             <div className="absolute inset-0 bg-brand-dark/10 mix-blend-multiply z-10"></div>
             <img 
-              src="/sobre-principal.png" 
-              alt="MORN Barbearia Interior" 
+              src={salonData.images?.aboutPrincipal || "/sobre-principal.png"} 
+              alt={`${salonData.name} Interior`} 
               className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-1000" 
               loading="lazy"
             />
           </div>
           
-          {/* Detalhe Flutuante: Retangular e com borda em Prata/Cromo */}
+          {/* Detalhe Flutuante Dinâmico */}
           <div className="absolute -bottom-6 -right-6 w-48 h-64 rounded-none overflow-hidden border-[8px] border-brand-dark shadow-2xl hidden lg:block z-20">
-            <img src="/sobre-detalhe.png" alt="Barbeiro em Ação" className="w-full h-full object-cover" loading="lazy" />
+            <img 
+              src={salonData.images?.aboutDetail || "/sobre-detalhe.png"} 
+              alt="Detalhe de Serviço" 
+              className="w-full h-full object-cover" 
+              loading="lazy" 
+            />
           </div>
         </motion.div>
 
@@ -68,7 +73,7 @@ export const About = ({ lang }: { lang: Language }) => {
                 transition={{ delay: 0.4 + (i * 0.1) }}
                 className="flex items-center gap-4 py-4 border-b border-brand-cream/10 group"
               >
-                {/* Marcador Quadrado (Industrial) em Prata */}
+                {/* Marcador Quadrado Industrial */}
                 <div className="w-2 h-2 bg-brand-straw rotate-45 group-hover:rotate-180 group-hover:bg-white transition-all duration-700"></div>
                 
                 <span className="text-lg md:text-xl font-serif font-medium tracking-wide text-brand-cream/90 group-hover:text-white transition-colors duration-500">

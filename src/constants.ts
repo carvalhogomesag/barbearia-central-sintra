@@ -14,7 +14,7 @@ export const UI_STRINGS = {
     bookTreatment: "Reservar Cadeira",
     viewServices: "Ver Preçário",
     ourEssence: "A nossa tradição",
-    luxuryMeetsRelaxation: "Onde o clássico encontra o moderno",
+    luxuryMeetsRelaxation: "Onde o luxo encontra o relaxamento",
     ourServices: "Serviços MORN",
     servicesSubtitle: "Excelência em barbearia clássica e tendências modernas no coração de Benfica.",
     duration: "Duração",
@@ -35,7 +35,7 @@ export const UI_STRINGS = {
     scroll: "Scroll",
     closed: "Fechado",
     team: "Barbeiros",
-    teamSubtitle: "Especialistas dedicados a realçar a sua melhor imagem.",
+    teamSubtitle: "Especialistas dedicadas a realçar a sua melhor imagem.",
     // RGPD Cookies
     cookiesTitle: "Privacidade & Cookies",
     cookiesText: "Utilizamos cookies para melhorar a sua experiência e analisar o tráfego do site. Ao continuar, aceita a nossa política.",
@@ -54,7 +54,7 @@ export const UI_STRINGS = {
     bookTreatment: "Book a Chair",
     viewServices: "View Prices",
     ourEssence: "Our Tradition",
-    luxuryMeetsRelaxation: "Where classic meets modern",
+    luxuryMeetsRelaxation: "Where luxury meets relaxation",
     ourServices: "MORN Services",
     servicesSubtitle: "Excellence in classic barbering and modern trends in the heart of Benfica.",
     duration: "Duration",
@@ -94,7 +94,7 @@ export const UI_STRINGS = {
     bookTreatment: "Reservar Silla",
     viewServices: "Ver Precios",
     ourEssence: "Nuestra Tradición",
-    luxuryMeetsRelaxation: "Donde lo clásico encuentra lo moderno",
+    luxuryMeetsRelaxation: "Donde el lujo se encuentra con la relajación",
     ourServices: "Servicios MORN",
     servicesSubtitle: "Excelencia en barbería clásica y tendencias modernas en el corazón de Benfica.",
     duration: "Duración",
@@ -135,14 +135,21 @@ export const SALON_DATA = {
   description: {
     pt: "A MORN Barbearia combina a arte tradicional da barbearia com o estilo urbano contemporâneo. No Centro Comercial Fonte Nova, oferecemos um espaço de convívio e cuidado masculino, onde cada detalhe — das cadeiras clássicas vermelhas ao acabamento à navalha — é pensado para quem valoriza a excelência e o bem-estar.",
     en: "MORN Barbearia blends traditional barbering art with contemporary urban style. Located at CC Fonte Nova, we provide a male grooming space where every detail — from classic red chairs to razor finishes — is designed for those who value excellence.",
-    es: "MORN Barbearia combina el arte tradicional de la barbería con el estilo urbano contemporáneo. En el CC Fonte Nova, ofrecemos un espacio de cuidado masculino donde cada detalle está pensado para quien valora la excelencia."
+    es: "MORN Barbearia combina el arte tradicional de la barbería con el estilo urbano contemporáneo. En el CC Fonte Nova, ofrecemos un espaço de cuidado masculino donde cada detalle está pensado para quien valora la excelencia."
   },
   address: "CC Fonte Nova, Estrada de Benfica 503, Loja 57, 1500-083 Lisboa",
   phoneNumber: "+351939559805",
   googleMapsUrl: "https://www.google.com/maps/dir//MORN+Barbearia+-+Centro+Comercial+Fonte+Nova+-+Benfica,+Centro+Comercial+Fonte+Nova,+Estr.+de+Benfica+503+Loja+57,+1500-083+Lisboa",
-  bookingUrl: "#", // Inserir link do sistema de reservas se aplicável
+  bookingUrl: "#", 
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.543412586716!2d-9.1973656!3d38.7470659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19335f606e1233%3A0x6a2c98e16663f707!2sMORN%20Barbearia%20-%20Centro%20Comercial%20Fonte%20Nova%20-%20Benfica!5e0!3m2!1spt!2spt!4v1740860000000",
   
+  // NOVA PROPRIEDADE: IMAGENS PRINCIPAIS (Editáveis via Matrix)
+  images: {
+    heroBg: "/hero-bg.png",
+    aboutPrincipal: "/sobre-principal.png",
+    aboutDetail: "/sobre-detalhe.png"
+  },
+
   socialLinks: {
     instagram: "https://www.instagram.com/mornbarbearia/",
     facebook: "",
@@ -163,20 +170,12 @@ export const SALON_DATA = {
   team: [
     {
       name: "Gonçalo Silva",
-      role: {
-        pt: "Master Barber",
-        en: "Master Barber",
-        es: "Maestro Barbero"
-      },
+      role: { pt: "Master Barber", en: "Master Barber", es: "Maestro Barbero" },
       image: "https://i.ibb.co/B5dryZzg/Captura-de-ecr-2026-03-01-111655.png"
     },
     {
       name: "Paulo Silva",
-      role: {
-        pt: "Barbeiro",
-        en: "Barber",
-        es: "Barbero"
-      },
+      role: { pt: "Barbeiro", en: "Barber", es: "Barbero" },
       image: "https://i.ibb.co/Xr3H5KMZ/Captura-de-ecr-2026-03-01-111713.png"
     }
   ],
@@ -236,30 +235,9 @@ export const SALON_DATA = {
   ],
   
   features: {
-    pt: [
-      "Ambiente Moderno",
-      "Especialistas em Barba",
-      "Estacionamento Fácil",
-      "Acessível",
-      "Wifi Gratuito",
-      "LGBTQ+ Friendly"
-    ],
-    en: [
-      "Modern Vibe",
-      "Beard Specialists",
-      "Easy Parking",
-      "Accessible",
-      "Free Wifi",
-      "LGBTQ+ Friendly"
-    ],
-    es: [
-      "Ambiente Moderno",
-      "Expertos en Barba",
-      "Parking Fácil",
-      "Accesible",
-      "Wifi Gratis",
-      "LGBTQ+ Friendly"
-    ]
+    pt: ["Ambiente Moderno", "Especialistas em Barba", "Estacionamento Fácil", "Acessível", "Wifi Gratuito", "LGBTQ+ Friendly"],
+    en: ["Modern Vibe", "Beard Specialists", "Easy Parking", "Accessible", "Free Wifi", "LGBTQ+ Friendly"],
+    es: ["Ambiente Moderno", "Expertos en Barba", "Parking Fácil", "Accesible", "Wifi Gratis", "LGBTQ+ Friendly"]
   },
   
   reviews: [
