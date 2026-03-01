@@ -13,34 +13,35 @@ export const FloatingContact = () => {
   return (
     <div className="fixed bottom-10 right-10 z-40 hidden md:flex flex-col gap-6">
       
-      {/* BOTÃO: CHAMADA TELEFÓNICA (Estética Neo-Clássica) */}
+      {/* BOTÃO: CHAMADA TELEFÓNICA (Estética de Carimbo de Redação) */}
       <motion.a
         href={`tel:${cleanPhone}`}
-        initial={{ opacity: 0, x: 30 }}
-        animate={{ opacity: 1, x: 0 }}
-        whileHover={{ scale: 1.05, x: -5 }}
+        initial={{ opacity: 0, scale: 0.8, x: 20 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
+        whileHover={{ x: 4, y: 4, transition: { duration: 0.2 } }}
         /* 
-           DESIGN LISBON'STYLE:
-           - Borda preta grossa
-           - Sombra sólida em AZUL ROYAL
+           DESIGN VINTAGE NEWS:
+           - Borda de tinta preta grossa
+           - Sombra sólida OFFSET que simula relevo (Efeito Press)
+           - Quando passa o rato, o botão "afunda" na sombra
         */
-        className="w-14 h-14 bg-white text-brand-dark border-2 border-brand-dark flex items-center justify-center shadow-[6px_6px_0px_0px_rgba(37,99,235,1)] hover:shadow-none hover:bg-brand-leaf hover:text-white transition-all duration-300 group rounded-none"
+        className="w-14 h-14 bg-white text-brand-leaf border-2 border-brand-leaf flex items-center justify-center shadow-[8px_8px_0px_0px_rgba(26,26,26,1)] hover:shadow-none transition-all duration-200 group rounded-none"
         title={`Ligar para ${salonData.name}`}
       >
         <Phone size={22} strokeWidth={2.5} className="group-hover:rotate-12 transition-transform duration-300" />
       </motion.a>
 
-      {/* BOTÃO: WHATSAPP (Sombra Industrial Black) */}
+      {/* BOTÃO: WHATSAPP (Estética de Tinta de Imprensa) */}
       <motion.a
-        href={`https://wa.me/${waNumber}?text=Olá! Gostaria de obter informações sobre os serviços da Lisbon'Style Barbershop Alvalade.`}
+        href={`https://wa.me/${waNumber}?text=Olá! Gostaria de obter informações sobre os serviços da Barbearia Central Sintra.`}
         target="_blank"
         rel="noreferrer"
-        initial={{ opacity: 0, x: 30 }}
-        animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, scale: 0.8, x: 20 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
         transition={{ delay: 0.1 }}
-        whileHover={{ scale: 1.05, x: -5 }}
-        /* Sombra sólida preta para destacar o verde do WhatsApp no fundo claro */
-        className="w-14 h-14 bg-[#25D366] text-white flex items-center justify-center shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)] hover:shadow-none transition-all duration-300 group rounded-none"
+        whileHover={{ x: 4, y: 4, transition: { duration: 0.2 } }}
+        /* Sombra sólida de tinta para um aspeto de "Edição Especial" */
+        className="w-14 h-14 bg-brand-leaf text-brand-cream flex items-center justify-center shadow-[8px_8px_0px_0px_rgba(26,26,26,0.3)] hover:shadow-none transition-all duration-200 group rounded-none"
         title="Enviar WhatsApp"
       >
         <MessageCircle size={26} fill="currentColor" className="transition-transform duration-300 group-hover:-rotate-12" />
