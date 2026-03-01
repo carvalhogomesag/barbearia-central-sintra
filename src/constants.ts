@@ -75,7 +75,7 @@ export const SALON_DATA = {
   ],
 
   team: [
-    { name: "Valmir", role: { pt: "Mestre Barbeiro", en: "Master Barber", es: "Maestro Barbero" }, image: "" },
+    { name: "Valmir", role: { pt: "Mestre Barbeiro", en: "Master Barber", es: "Maestro Barbero" }, image: "https://i.ibb.co/PG8X2CK3/Captura-de-ecr-2026-03-01-225245.webp" },
     { name: "Gabriel", role: { pt: "Especialista Kids & Estilo", en: "Kids & Style Specialist", es: "Especialista Kids" }, image: "" }
   ],
   
