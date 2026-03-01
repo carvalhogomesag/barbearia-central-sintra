@@ -4,11 +4,11 @@ export type Language = "pt" | "en" | "es";
 
 export const UI_STRINGS = {
   pt: {
-    about: "História", services: "Edições", gallery: "Arquivo", gallerySubtitle: "Crónicas em imagem.",
-    reviews: "Testemunhos", location: "Redação", bookNow: "Reservar Cadeira", bookTreatment: "Marcar Corte",
+    about: "História", services: "Preçário", gallery: "Arquivo", gallerySubtitle: "Crónicas em imagem.",
+    reviews: "Testemunhos", location: "Localização", bookNow: "Reservar Cadeira", bookTreatment: "Marcar Corte",
     viewServices: "Ver Preçário", ourEssence: "Desde sempre", luxuryMeetsRelaxation: "Estilo Tradicional & Navalha",
     ourServices: "Serviços Centrais", servicesSubtitle: "Rituais de barbearia clássica no coração de Pêro Pinheiro, Sintra.",
-    duration: "Tempo", price: "Valor", visitUs: "Visite a Redação", openingHours: "Horário",
+    duration: "Tempo", price: "Valor", visitUs: "Visite a Barbearia Central", openingHours: "Horário",
     seeOnGoogleMaps: "Localizar", followUs: "Siga-nos", quickLinks: "Atalhos", privacy: "Privacidade",
     terms: "Termos", allRightsReserved: "Todos os direitos reservados.",
     tagline: "A sua barbearia de confiança com o espírito da velha guarda em Sintra.",
