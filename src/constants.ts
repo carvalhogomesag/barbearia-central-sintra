@@ -71,7 +71,8 @@ export const SALON_DATA = {
 
   galleryPhotos: [
     "https://i.ibb.co/JFqMZPw6/pexels-gustavo-fring-7447150.jpg",
-    "", "", "", "", "", "", "", "", ""
+    "https://i.ibb.co/tp55bNd6/pexels-kevinbidwell-9971240.jpg",
+    "https://i.ibb.co/MxjKjv56/pexels-cottonbro-3998429.jpg", "", "", "", "", "", "", ""
   ],
 
   team: [
