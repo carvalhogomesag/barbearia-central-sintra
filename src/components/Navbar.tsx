@@ -46,34 +46,37 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-4" : "bg-transparent py-8"}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? "glass py-3" : "bg-transparent py-6"}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        {/* LOGÓTIPO LISBON'STYLE: Neo-Clássico */}
-        <a href="#" className="flex flex-col leading-none group">
-          <span className="text-2xl font-serif font-black tracking-tighter text-brand-dark uppercase group-hover:text-brand-leaf transition-colors">
-            Lisbon'Style
+        
+        {/* LOGÓTIPO: Estilo Cabeçalho de Jornal Antigo */}
+        <a href="#" className="flex flex-col items-center leading-none group border-y-2 border-brand-leaf py-1 px-2">
+          <span className="text-2xl md:text-3xl font-serif font-black tracking-tighter text-brand-leaf uppercase">
+            Central
           </span>
-          <span className="text-[10px] uppercase tracking-[0.4em] text-brand-leaf font-bold">
-            Barbershop
+          <span className="text-[9px] uppercase tracking-[0.4em] text-brand-leaf font-typewriter">
+            Barbearia Sintra
           </span>
         </a>
 
         {/* --- MENU DESKTOP --- */}
-        <div className="hidden lg:flex items-center space-x-10">
+        <div className="hidden lg:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a 
               key={link.name} 
               href={link.href} 
-              className="text-[10px] uppercase tracking-[0.25em] font-bold text-brand-dark/80 hover:text-brand-leaf transition-colors relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-0.5 after:bg-brand-leaf hover:after:w-full after:transition-all"
+              className="text-[11px] uppercase tracking-widest font-typewriter text-brand-leaf/70 hover:text-brand-leaf transition-colors relative group"
             >
               {link.name}
+              <span className="absolute -bottom-1 left-0 w-0 h-px bg-brand-leaf transition-all group-hover:w-full"></span>
             </a>
           ))}
           
+          {/* Seletor de Idioma: Estilo "Classificado" */}
           <div className="relative">
             <button 
               onClick={() => setIsLangMenuOpen(!isLangMenuOpen)} 
-              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] hover:text-brand-leaf transition-colors"
+              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest font-typewriter hover:bg-brand-straw/20 px-2 py-1 transition-colors"
             >
               <Globe size={14} /> {lang}
             </button>
@@ -83,13 +86,13 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
                   initial={{ opacity: 0, y: 10 }} 
                   animate={{ opacity: 1, y: 0 }} 
                   exit={{ opacity: 0, y: 10 }} 
-                  className="absolute right-0 mt-4 w-32 bg-white shadow-2xl rounded-none overflow-hidden border border-zinc-200 p-1"
+                  className="absolute right-0 mt-4 w-32 bg-brand-cream shadow-2xl rounded-none overflow-hidden border-2 border-brand-leaf p-1"
                 >
                   {languages.map((l) => (
                     <button 
                       key={l.code} 
                       onClick={() => { setLang(l.code); setIsLangMenuOpen(false); }} 
-                      className={`w-full text-left px-4 py-2 text-[11px] font-bold uppercase tracking-wider transition-colors ${lang === l.code ? "text-white bg-brand-leaf" : "text-brand-dark/70 hover:bg-zinc-100"}`}
+                      className={`w-full text-left px-3 py-2 text-[10px] font-typewriter uppercase tracking-tighter transition-colors ${lang === l.code ? "bg-brand-leaf text-brand-cream" : "text-brand-leaf hover:bg-brand-straw/30"}`}
                     >
                       {l.label}
                     </button>
@@ -99,6 +102,7 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
             </AnimatePresence>
           </div>
 
+          {/* Botão de Agendamento: Estilo Carimbo */}
           <a href={salonData.bookingUrl} target="_blank" rel="noreferrer" className="btn-primary">
             {t.bookNow}
           </a>
@@ -107,18 +111,16 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
         {/* --- CABEÇALHO MOBILE --- */}
         <div className="flex items-center gap-3 lg:hidden">
           
-          {/* SELETOR DE IDIOMAS MOBILE: Estética Azul/Preto */}
           <div className="relative">
             <button 
               onClick={() => {
                 setIsLangMenuOpen(!isLangMenuOpen);
                 if (isMobileMenuOpen) setIsMobileMenuOpen(false);
               }} 
-              className="flex items-center gap-1 px-3 py-2 bg-brand-dark text-white rounded-none text-[9px] font-black uppercase tracking-widest transition-all active:scale-95 shadow-lg"
+              className="flex items-center gap-1 px-3 py-2 bg-brand-leaf text-brand-cream border border-brand-leaf rounded-none text-[9px] font-black uppercase tracking-widest"
             >
-              <Globe size={12} className="text-brand-leaf" />
               {lang}
-              <ChevronDown size={10} className={`transition-transform duration-300 text-brand-leaf ${isLangMenuOpen ? "rotate-180" : ""}`} />
+              <ChevronDown size={10} className={`${isLangMenuOpen ? "rotate-180" : ""} transition-transform`} />
             </button>
 
             <AnimatePresence>
@@ -127,13 +129,13 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
                   initial={{ opacity: 0, scale: 0.9, y: 5 }} 
                   animate={{ opacity: 1, scale: 1, y: 0 }} 
                   exit={{ opacity: 0, scale: 0.9, y: 5 }} 
-                  className="absolute right-0 mt-3 w-32 bg-brand-dark shadow-2xl rounded-none border border-white/10 p-1 z-[60]"
+                  className="absolute right-0 mt-3 w-32 bg-brand-cream shadow-2xl border-2 border-brand-leaf p-1 z-[60]"
                 >
                   {languages.map((l) => (
                     <button 
                       key={l.code} 
                       onClick={() => { setLang(l.code); setIsLangMenuOpen(false); }} 
-                      className={`w-full text-left px-4 py-3 text-[10px] font-bold uppercase tracking-widest transition-colors ${lang === l.code ? "text-white bg-brand-leaf" : "text-zinc-400 hover:text-white"}`}
+                      className={`w-full text-left px-4 py-3 text-[10px] font-typewriter uppercase transition-colors ${lang === l.code ? "bg-brand-leaf text-brand-cream" : "text-brand-leaf"}`}
                     >
                       {l.label}
                     </button>
@@ -143,9 +145,8 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
             </AnimatePresence>
           </div>
 
-          {/* BOTÃO HAMBÚRGUER */}
           <button 
-            className="w-10 h-10 flex items-center justify-center text-brand-dark active:scale-90 transition-transform" 
+            className="w-10 h-10 flex items-center justify-center text-brand-leaf active:scale-90 transition-transform" 
             onClick={() => {
               setIsMobileMenuOpen(!isMobileMenuOpen);
               if (isLangMenuOpen) setIsLangMenuOpen(false);
@@ -156,28 +157,42 @@ export const Navbar = ({ lang, setLang }: NavbarProps) => {
         </div>
       </div>
 
-      {/* --- MENU MOBILE EXPANDIDO --- */}
+      {/* --- MENU MOBILE EXPANDIDO: Efeito "Folha de Jornal" --- */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div 
-            initial={{ opacity: 0, y: -20 }} 
-            animate={{ opacity: 1, y: 0 }} 
-            exit={{ opacity: 0, y: -20 }} 
-            className="absolute top-full left-0 right-0 bg-white shadow-2xl border-t border-zinc-100 p-8 flex flex-col gap-6 lg:hidden"
+            initial={{ x: "100%" }} 
+            animate={{ x: 0 }} 
+            exit={{ x: "100%" }} 
+            transition={{ type: "spring", damping: 25, stiffness: 200 }}
+            className="fixed inset-0 bg-brand-cream z-[100] p-8 flex flex-col lg:hidden"
           >
-            {navLinks.map((link) => (
-              <a 
-                key={link.name} 
-                href={link.href} 
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="text-2xl font-serif font-bold text-brand-dark border-b border-zinc-100 pb-2 uppercase tracking-tighter hover:text-brand-leaf transition-colors"
-              >
-                {link.name}
+            <div className="flex justify-between items-center mb-12 border-b-2 border-brand-leaf pb-6">
+              <span className="font-serif font-black uppercase text-xl">Menu Central</span>
+              <button onClick={() => setIsMobileMenuOpen(false)}><X size={32} /></button>
+            </div>
+            
+            <div className="flex flex-col gap-6">
+              {navLinks.map((link) => (
+                <a 
+                  key={link.name} 
+                  href={link.href} 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="text-4xl font-serif font-black text-brand-leaf uppercase tracking-tighter border-b border-brand-straw/30 pb-2"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
+
+            <div className="mt-auto">
+              <p className="font-typewriter text-[10px] uppercase text-brand-leaf/40 mb-6 text-center italic">
+                Edição Especial — Sintra
+              </p>
+              <a href={salonData.bookingUrl} target="_blank" rel="noreferrer" className="btn-primary w-full text-center py-5 text-lg">
+                {t.bookNow}
               </a>
-            ))}
-            <a href={salonData.bookingUrl} target="_blank" rel="noreferrer" className="btn-primary text-center py-5">
-              {t.bookNow}
-            </a>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
